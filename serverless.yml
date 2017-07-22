@@ -1,0 +1,20 @@
+service: email-client
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - ses:SendEmail
+          - ses:SendRawEmail
+        Resource: "*"
+
+functions:
+  sendEmail:
+    handler: handler.sendEmail
+    events:
+      - http:
+          path: sendEmail
+          method: post
+          cors: true
