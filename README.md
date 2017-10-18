@@ -16,7 +16,7 @@ The request should contain a JSON object with three keys:
 ```
 
 #### Environment Variables
-Include the following in a `.env` file or configure the variables in the AWS Lambda console.
+Configure the following variables in the AWS Lambda console.
 - SENDER_EMAIL
 		The SES registered email that will be sending the email.
 - RECIPIENT_EMAIL

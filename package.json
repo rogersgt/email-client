@@ -10,7 +10,5 @@
   "devDependencies": {
     "serverless": "^1.18.0"
   },
-  "dependencies": {
-    "dotenv": "^4.0.0"
-  }
+  "dependencies": {}
 }

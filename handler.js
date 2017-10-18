@@ -4,8 +4,6 @@ const ses = new AWS.SES({
   apiVersion: '2010-12-01',
   region: process.env.REGION,
 });
-const dotenv = require('dotenv');
-dotenv.config({ path: './.env' });
 
 module.exports.sendEmail = (event, context, callback) => {
   // Incoming data about the email.
